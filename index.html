@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORAKI · Juegos de mesa</title>
+<meta name="description" content="ORAKI es una editorial independiente de juegos de mesa. El momento que elegimos para jugar.">
+<meta property="og:title" content="ORAKI · El momento que elegimos para jugar">
+<meta property="og:description" content="Editorial independiente de juegos de mesa. Primer juego: El Guardián del Templo.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Enlaces que todavía faltan: buscá "PEGAR_" y reemplazalos. */
+  :root{--navy:#203441;--teal:#477D80;--ochre:#D5A64C;--terra:#C95727;--ivory:#F1E7D5;--paper:#F8F2E6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Montserrat,system-ui,sans-serif;background:var(--ivory);color:var(--navy);line-height:1.55;font-size:18px}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  header img{height:44px}
+  .lang{border:2px solid var(--navy);background:none;color:var(--navy);font:700 14px Montserrat;padding:6px 12px;border-radius:999px;cursor:pointer}
+  .hero{text-align:center;padding:56px 0 72px}
+  .hero img{width:min(340px,70vw)}
+  .lema{font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);font-size:15px;margin-top:22px}
+  .navy{background:var(--navy);color:var(--ivory)}
+  section{padding:72px 0}
+  .kicker{font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--terra);font-size:14px}
+  h2{font-weight:800;font-size:clamp(30px,5vw,48px);line-height:1.1;margin:10px 0 22px}
+  .navy h2 .acento,.acento{color:var(--terra)}
+  .navy .kicker{color:var(--ochre)}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .anagrama{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+  .anagrama span{width:52px;height:60px;border:3px solid currentColor;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:30px}
+  .anagrama.b span{color:var(--terra)}
+  .juego img.portada{width:100%;border-radius:16px;display:block}
+  .botones{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .btn{display:inline-block;background:var(--terra);color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:12px}
+  .btn.sec{background:none;color:var(--navy);border:2px solid var(--navy)}
+  .navy .btn.sec{color:var(--ivory);border-color:var(--ivory)}
+  .news{text-align:center}
+  .news img{width:160px;-webkit-mask-image:radial-gradient(ellipse closest-side,#000 72%,transparent 100%);mask-image:radial-gradient(ellipse closest-side,#000 72%,transparent 100%)}
+  footer{padding:40px 0;font-size:15px;text-align:center}
+  footer nav{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:14px;font-weight:600}
+  [data-en]{display:none}
+  html[lang=en] [data-es]{display:none}
+  html[lang=en] [data-en]{display:revert}
+  @media (max-width:760px){.cols{grid-template-columns:1fr;gap:28px}section{padding:52px 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="img/oraki_simbolo_color.png" alt="ORAKI">
+    <button class="lang" id="lang" aria-label="Cambiar idioma / Change language">EN</button>
+  </header>
+  <div class="hero">
+    <img src="img/oraki_logo_color.png" alt="ORAKI">
+    <p class="lema"><span data-es>El momento que elegimos para jugar.</span><span data-en>The moment we choose to play.</span></p>
+  </div>
+</div>
+
+<section class="navy">
+  <div class="wrap cols">
+    <div>
+      <p class="kicker"><span data-es>¿Qué significa ORAKI?</span><span data-en>What does ORAKI mean?</span></p>
+      <h2><span data-es>Calma por fuera. <span class="acento">Caos por dentro.</span></span><span data-en>Calm outside. <span class="acento">Chaos inside.</span></span></h2>
+      <p data-es>En griego antiguo, <b>kairós</b> es el momento oportuno: ese instante que no es un instante cualquiera. Le sacamos la tilde y la S, y desordenamos las letras.</p>
+      <p data-en>In ancient Greek, <b>kairós</b> is the right moment: the instant that is not just any instant. We dropped the accent and the S, and shuffled the letters.</p>
+      <div class="anagrama"><span>K</span><span>A</span><span>I</span><span>R</span><span>O</span></div>
+      <div class="anagrama b"><span>O</span><span>R</span><span>A</span><span>K</span><span>I</span></div>
+    </div>
+    <div>
+      <p data-es>Vivimos rodeados de obligaciones, apuro y distracciones. ORAKI es ese momento en el que elegimos frenar, sentarnos a una mesa y entrar en otro mundo.</p>
+      <p data-en>We live surrounded by obligations, rush and distractions. ORAKI is the moment we choose to stop, sit at a table and step into another world.</p>
+      <br>
+      <p data-es>Hacemos juegos con personalidad: pensados, probados y cuidados hasta el detalle, pero sin tomarnos demasiado en serio.</p>
+      <p data-en>We make games with personality: designed, tested and cared for down to the detail, without taking ourselves too seriously.</p>
+    </div>
+  </div>
+</section>
+
+<section class="juego">
+  <div class="wrap cols">
+    <img class="portada" src="img/patio.jpg" alt="El patio del Templo del Loto Torcido">
+    <div>
+      <p class="kicker"><span data-es>Nuestro primer juego</span><span data-en>Our first game</span></p>
+      <h2><span data-es>El Guardián del Templo</span><span data-en>Guardian of the Temple</span></h2>
+      <p data-es>Shifu se fue siete días. Te dejó una nota, un templo y una gata que te juzga. Un solitario de construcción de mazo donde cada peligro que aguantás se da vuelta y se convierte en una técnica tuya. <b>1 jugador · 25 min.</b></p>
+      <p data-en>Shifu is gone for seven days. He left you a note, a temple and a cat who judges you. A solo deck-builder where every danger you survive flips into a technique of your own. <b>1 player · 25 min.</b></p>
+      <div class="botones">
+        <a class="btn" href="PEGAR_LINK_APP_STORE">App Store</a>
+        <a class="btn sec" href="PEGAR_LINK_NEWSLETTER"><span data-es>Android: avisame</span><span data-en>Android: notify me</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="navy news">
+  <div class="wrap">
+    <img src="img/mei.png" alt="Mei, la gata del templo">
+    <h2><span data-es>Enterate antes que la gata.</span><span data-en>Hear it before the cat does.</span></h2>
+    <p data-es>Próximos juegos, pruebas abiertas y detrás de escena. Un correo cada tanto, sin spam.</p>
+    <p data-en>Upcoming games, open playtests and behind the scenes. An email now and then, no spam.</p>
+    <div class="botones" style="justify-content:center"><a class="btn" href="PEGAR_LINK_NEWSLETTER"><span data-es>Suscribirme</span><span data-en>Subscribe</span></a></div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <nav>
+    <a href="https://instagram.com/oraki.games">Instagram</a>
+    <a href="https://tiktok.com/@orakigames">TikTok</a>
+    <a href="https://youtube.com/@orakigames">YouTube</a>
+    <a href="https://boardgamegeek.com/">BoardGameGeek</a>
+  </nav>
+  <p>© 2026 ORAKI · <span data-es>El momento que elegimos para jugar.</span><span data-en>The moment we choose to play.</span></p>
+</footer>
+
+<script>
+  const root = document.documentElement, btn = document.getElementById('lang');
+  function setLang(l){ root.lang = l; btn.textContent = l === 'es' ? 'EN' : 'ES'; try{ localStorage.setItem('oraki-lang', l) }catch(e){} }
+  let inicial = 'es';
+  try{ inicial = localStorage.getItem('oraki-lang') || ((navigator.language||'es').startsWith('es') ? 'es' : 'en') }catch(e){}
+  setLang(inicial);
+  btn.addEventListener('click', () => setLang(root.lang === 'es' ? 'en' : 'es'));
+</script>
+</body>
+</html>
